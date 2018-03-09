@@ -5,11 +5,12 @@
 <title>Registration</title>
 </head>
 
-<body align="middle" style = "background-color:cyan; margin: 10px;">
+<body align="middle" style = "background-color:#e9e9e9; margin: 10px;">
 <h1 style="text-align:center;">
 <b>BAYBURT</b><hr />
 </h1>
       <table align="center", border = "1">
+	 
          <tbody>
             <tr>
                <td>&#160 <a href="home.htm"><font size="4"> Home </font></a>&#160 </td>
@@ -22,47 +23,33 @@
             </tr>
          </tbody>
       </table>
- <center>
-         <br><br><br>
-         <form method="post" style="font-size: 24px">   
-      <fieldset align="left" style="width:18em;display:inline-block"><br>
-      <label for="name">Name:</label>
-      <input type="text" name="Name" id="name" width="100%" required autofocus> <br>
-      
-      <label for="surname">Surname:</label>
-      <input type="text" name="surname" id="Surname" width="100%" required> <br>
-      
-      <label for="date_of_birth">Date of Birth:</label>
-      <input type="date_of_birth" name="date_of_birth" id="Date of Birth" placeholder="DD.MM.YYYY"> <br>
-      
-      <label for="E-Mail">E-mail:</label>
-      <input type="E-mail" name="E-mail" id="E-Mail" placeholder="example@example.com" required> <br>
 
-      <label for="password">Password:</label>
-      <input type="password" name="Password" id="Pword" width="100%" required> <br>
-      
-      <label for="telephone">Telephone Number:</label>
-      <input type="telephone" name="telephone" id="telephone"> <br>
-      
-      <label for="website">Website:</label>
-      <input type="text" name="Website" id="website"> <br>
-      
-      <tr>
-      <td> Gender:</td>
-      <td><select required> <option value="Male">Male</option>  <option value="Female">Female</option> </select></td>
-   </tr>
-   <tr><td></td></tr>
-   <tr>
-    <td><p></p>Interests:<br></td>
-    <td><input name="interests" type="checkbox" >Gaming<br><input name="int" type="checkbox">Reading<br><input name="int" type="checkbox">Coding<br><input name="int" type="checkbox">Traveling<br><input name="int" type="checkbox">Sleeping<br><input name="int" type="checkbox">Sports</td>
-</tr>
-<tr> <td>&nbsp;</td> </tr><br><br>
-      </div>
-      <input type="button" style="font-size: 24px" value="Submit" onclick="location.href='done.htm'"> 
-      <input type="reset"  style="font-size: 24px" value="Reset" align="center">
-      <br><br>
-   </center>
-   </fieldset>
+	  <br><br><br><br>
+
+
+	  <form action="done.htm" method="post">
+		<fieldset  style="width:20em;display:inline-block">
+			<legend align="left"> Personal Information:</legend>
+First Name: <input type="text" name="firstname" required /> <br>
+Last Name:  <input type="text" name="lastname" required /> <br>
+Password:   &#160 <input type="password" name="pwd" required /> <br>
+E-Mail:&#160&#160&#160&#160  &#160 <input type="email" name="email" placeholder="example@example.com" required /> <br>
+Date of Birth  &#160&#160 <input type="date" name="date_of_birth" /><br>
+Gender:
+<input type="radio" name="sex" value="male" /> Male
+<input type="radio" name="sex" value="female" /> Female<br>
+Interests:<br>
+<input type="checkbox" name="language" value="HTML" />HTML
+<input type="checkbox" name="language" value="C" />C
+<input type="checkbox" name="language" value="C++" />C++
+<input type="checkbox" name="language" value="Java" />Java<br>
+<input type="checkbox" name="language" value="C#" />C#
+<input type="checkbox" name="language" value="Python" />Python
+<input type="checkbox" name="language" value="etc" />Other<br><br>
+<input type="submit" value="Submit" onclick="location.href='done.htm' required" />
+<input type="reset" value="Reset" />
+</form>
+</fieldset>
 </body>
 
 </html>
